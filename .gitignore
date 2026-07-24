@@ -39,8 +39,6 @@ android/.kotlin/
 
 # iOS specific
 ios/Pods/
-ios/Runner.xcworkspace/
-ios/Runner.xcodeproj/project.xcworkspace/
 ios/Runner.xcodeproj/xcuserdata/
 ios/Runner.xcworkspace/xcuserdata/
 ios/Flutter/App.framework
