@@ -84,5 +84,9 @@
 		<string>tel</string>
 		<string>mailto</string>
 	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>تفريغ وإدخال بيانات بطاقة الدفع تلقائياً</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>حفظ واختيار الصور والشهادات داخل التطبيق</string>
 </dict>
 </plist>
