@@ -394,7 +394,7 @@ class _CartPageState extends State<CartPage> {
                         shrinkWrap: true,
                         physics: const NeverScrollableScrollPhysics(),
                         itemCount: cartItems.length,
-                        separatorBuilder: (_, _) => const SizedBox(height: 10),
+                        separatorBuilder: (context, index) => const SizedBox(height: 10),
                         itemBuilder: (_, i) =>
                             _buildCartItem(cartItems[i], settingsProvider),
                       ),

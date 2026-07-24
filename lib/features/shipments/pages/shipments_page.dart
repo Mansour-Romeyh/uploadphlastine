@@ -331,7 +331,7 @@ class _ShipmentsPageState extends State<ShipmentsPage> {
                               : ListView.separated(
                                   padding: const EdgeInsets.all(16),
                                   itemCount: filtered.length,
-                                  separatorBuilder: (_, _) =>
+                                  separatorBuilder: (context, index) =>
                                       const SizedBox(height: 16),
                                   itemBuilder: (context, index) {
                                     final shipment = filtered[index];

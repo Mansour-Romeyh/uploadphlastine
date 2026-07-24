@@ -645,7 +645,7 @@ class _SettingsPageState extends State<SettingsPage>
     return ListView.separated(
       padding: const EdgeInsets.all(16),
       itemCount: _customerOrders.length,
-      separatorBuilder: (_, _) => const SizedBox(height: 10),
+      separatorBuilder: (context, index) => const SizedBox(height: 10),
       itemBuilder: (context, index) {
         final order = _customerOrders[index];
         final orderId = _safeText(order['id']);
@@ -742,7 +742,7 @@ class _SettingsPageState extends State<SettingsPage>
         return ListView.separated(
           padding: const EdgeInsets.all(16),
           itemCount: provider.shipments.length,
-          separatorBuilder: (_, _) => const SizedBox(height: 10),
+          separatorBuilder: (context, index) => const SizedBox(height: 10),
           itemBuilder: (context, index) {
             final s = provider.shipments[index];
             final code = _safeText(
@@ -832,7 +832,7 @@ class _SettingsPageState extends State<SettingsPage>
         return ListView.separated(
           padding: const EdgeInsets.all(16),
           itemCount: addresses.length,
-          separatorBuilder: (_, _) => const SizedBox(height: 10),
+          separatorBuilder: (context, index) => const SizedBox(height: 10),
           itemBuilder: (context, index) {
             final addr = addresses[index];
             return Container(
@@ -937,7 +937,7 @@ class _SettingsPageState extends State<SettingsPage>
     return ListView.separated(
       padding: const EdgeInsets.all(16),
       itemCount: methods.length,
-      separatorBuilder: (_, _) => const SizedBox(height: 10),
+      separatorBuilder: (context, index) => const SizedBox(height: 10),
       itemBuilder: (context, index) {
         final method = methods[index];
         return Container(
